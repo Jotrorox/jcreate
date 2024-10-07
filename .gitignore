@@ -5,3 +5,6 @@ effective-pom.xml
 .mvn
 .project
 .vscode
+.idea
+*.iml
+my-app
