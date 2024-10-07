@@ -4,3 +4,4 @@ target
 effective-pom.xml
 .mvn
 .project
+.vscode

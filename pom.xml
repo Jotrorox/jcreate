@@ -9,6 +9,26 @@
 
   <name>jcreate</name>
 
+  <licenses>
+    <license>
+      <name>AGPL-3.0</name>
+      <url>https://www.gnu.org/licenses/agpl-3.0.html</url>
+    </license>
+  </licenses>
+
+  <developers>
+    <developer>
+      <id>jotrorox</id>
+      <name>Johannes (Jotrorox) Müller</name>
+      <email>mail@jotrorox.com</email>
+      <url>https://jotrorox.com</url>
+      <roles>
+        <role>developer</role>
+        <role>maintainer</role>
+      </roles>
+    </developer>
+  </developers>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>21</maven.compiler.release>
