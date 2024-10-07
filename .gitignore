@@ -1,2 +1,6 @@
 target
-
+.settings
+.classpath
+effective-pom.xml
+.mvn
+.project
