@@ -1,5 +1,7 @@
 package com.jotrorox.jcreate;
 
+import java.util.Scanner;
+
 public class App {
   public static void main(String[] args) {
     switch (args.length) {
@@ -9,11 +11,10 @@ public class App {
       }
 
       case 1: {
-        if (args[0].equals("help")) {
-          System.out.println(getHelpMessage());
-        } else {
-          System.out.println(getDefaultMessage());
-        }
+        if (args[0].equals("help")) System.out.println(getHelpMessage());
+        else if (args[0].equals("create")) interactiveAppCreation();
+        else if (args[0].equals("version")) System.out.println("JCreate v1.0");
+        else System.out.println(getDefaultMessage());
         break;
       }
 
@@ -46,6 +47,25 @@ public class App {
     } catch (Exception e) {
       e.printStackTrace();
     }
+  }
+
+  private static void interactiveAppCreation() {
+    Scanner scanner = new Scanner(System.in);
+    
+    System.out.println("Creating a new Maven project");
+
+    System.out.println("Enter the groupId:");
+    String groupId = scanner.nextLine();
+
+    System.out.println("Enter the artifactId:");
+    String artifactId = scanner.nextLine();
+
+    System.out.println("Enter the packaging:");
+    String packaging = scanner.nextLine();
+
+    scanner.close();
+
+    basicAppCreation(groupId, artifactId, packaging);
   }
 
   private static String getDefaultMessage() {
